@@ -71,9 +71,9 @@
             JBOSS_CONTAINER_PROMETHEUS_MODULE="/opt/jboss/container/prometheus"
         # Custom scripts from 'jboss.container.prometheus' module
         USER root
-        RUN [ "sh", "-x", "/tmp/scripts/prometheus/configure.sh" ]
+        RUN [ "sh", "-x", "/tmp/scripts/prometheus/8.6.11/configure.sh" ]
         USER root
-        RUN [ "sh", "-x", "/tmp/scripts/prometheus/backwards_compatibility.sh" ]
+        RUN [ "sh", "-x", "/tmp/scripts/prometheus/8.6.11/backwards_compatibility.sh" ]
 ###### /
 ###### END module 'jboss.container.prometheus:8.6.11'
 
