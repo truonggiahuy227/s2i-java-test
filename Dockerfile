@@ -101,9 +101,9 @@
         EXPOSE 8778
         # Custom scripts from 'jboss.container.jolokia' module
         USER root
-        RUN [ "sh", "-x", "/tmp/scripts/jolokia/configure.sh" ]
+        RUN [ "sh", "-x", "/tmp/scripts/jolokia/8.2/configure.sh" ]
         USER root
-        RUN [ "sh", "-x", "/tmp/scripts/jolokia/backward_compatibility.sh" ]
+        RUN [ "sh", "-x", "/tmp/scripts/jolokia/8.2/backward_compatibility.sh" ]
 ###### /
 ###### END module 'jboss.container.jolokia:8.2'
 

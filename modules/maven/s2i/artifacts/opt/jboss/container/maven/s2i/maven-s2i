@@ -73,6 +73,9 @@ function maven_s2i_build() {
   if [ -f "${S2I_SOURCE_DIR}/pom.xml" ]; then
     # maven build
     maven_s2i_maven_build
+  elif [ -f "${S2I_SOURCE_DIR}/gradlew" ]; then
+    #gradle build
+    gradle_buid
   else
     # binary build
     maven_s2i_binary_build
